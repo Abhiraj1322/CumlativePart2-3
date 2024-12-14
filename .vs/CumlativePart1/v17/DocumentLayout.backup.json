@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Owner\\Documents\\web humber\\CumlativePart1-2\\CumlativePart2-3\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3B3D95CC-5B9B-426C-BB63-C8A2DBCC4A53}|CumlativePart1\\CumlativePart1.csproj|c:\\users\\owner\\documents\\web humber\\cumlativepart1-2\\cumlativepart2-3\\cumlativepart1\\controllers\\teacherapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B3D95CC-5B9B-426C-BB63-C8A2DBCC4A53}|CumlativePart1\\CumlativePart1.csproj|solutionrelative:cumlativepart1\\controllers\\teacherapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3B3D95CC-5B9B-426C-BB63-C8A2DBCC4A53}|CumlativePart1\\CumlativePart1.csproj|c:\\users\\owner\\documents\\web humber\\cumlativepart1-2\\cumlativepart2-3\\cumlativepart1\\controllers\\teacherpagecontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B3D95CC-5B9B-426C-BB63-C8A2DBCC4A53}|CumlativePart1\\CumlativePart1.csproj|solutionrelative:cumlativepart1\\controllers\\teacherpagecontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,8 +15,12 @@
       "RelativeMoniker": "D:0:0:{3B3D95CC-5B9B-426C-BB63-C8A2DBCC4A53}|CumlativePart1\\CumlativePart1.csproj|solutionrelative:cumlativepart1\\controllers\\studentapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B3D95CC-5B9B-426C-BB63-C8A2DBCC4A53}|CumlativePart1\\CumlativePart1.csproj|c:\\users\\owner\\documents\\web humber\\cumlativepart1-2\\cumlativepart2-3\\cumlativepart1\\controllers\\teacherapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B3D95CC-5B9B-426C-BB63-C8A2DBCC4A53}|CumlativePart1\\CumlativePart1.csproj|solutionrelative:cumlativepart1\\controllers\\teacherapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3B3D95CC-5B9B-426C-BB63-C8A2DBCC4A53}|CumlativePart1\\CumlativePart1.csproj|c:\\users\\owner\\documents\\web humber\\cumlativepart1-2\\cumlativepart2-3\\cumlativepart1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B3D95CC-5B9B-426C-BB63-C8A2DBCC4A53}|CumlativePart1\\CumlativePart1.csproj|solutionrelative:cumlativepart1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B3D95CC-5B9B-426C-BB63-C8A2DBCC4A53}|CumlativePart1\\CumlativePart1.csproj|c:\\users\\owner\\documents\\web humber\\cumlativepart1-2\\cumlativepart2-3\\cumlativepart1\\controllers\\coursepagecontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B3D95CC-5B9B-426C-BB63-C8A2DBCC4A53}|CumlativePart1\\CumlativePart1.csproj|solutionrelative:cumlativepart1\\controllers\\coursepagecontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3B3D95CC-5B9B-426C-BB63-C8A2DBCC4A53}|CumlativePart1\\CumlativePart1.csproj|c:\\users\\owner\\documents\\web humber\\cumlativepart1-2\\cumlativepart2-3\\cumlativepart1\\controllers\\courseapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -37,50 +45,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Documents\\web humber\\CumlativePart1-2\\CumlativePart2-3\\CumlativePart1\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "CumlativePart1\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Owner\\Documents\\web humber\\CumlativePart1-2\\CumlativePart2-3\\CumlativePart1\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "CumlativePart1\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T20:04:51.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CoursePageController1.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Documents\\web humber\\CumlativePart1-2\\CumlativePart2-3\\CumlativePart1\\Controllers\\CoursePageController1.cs",
+              "RelativeDocumentMoniker": "CumlativePart1\\Controllers\\CoursePageController1.cs",
+              "ToolTip": "C:\\Users\\Owner\\Documents\\web humber\\CumlativePart1-2\\CumlativePart2-3\\CumlativePart1\\Controllers\\CoursePageController1.cs",
+              "RelativeToolTip": "CumlativePart1\\Controllers\\CoursePageController1.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T20:04:43.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "StudentAPIController.cs",
               "DocumentMoniker": "C:\\Users\\Owner\\Documents\\web humber\\CumlativePart1-2\\CumlativePart2-3\\CumlativePart1\\Controllers\\StudentAPIController.cs",
               "RelativeDocumentMoniker": "CumlativePart1\\Controllers\\StudentAPIController.cs",
               "ToolTip": "C:\\Users\\Owner\\Documents\\web humber\\CumlativePart1-2\\CumlativePart2-3\\CumlativePart1\\Controllers\\StudentAPIController.cs",
               "RelativeToolTip": "CumlativePart1\\Controllers\\StudentAPIController.cs",
-              "ViewState": "AgIAAMoAAAAAAAAAAAAAANcAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAMMAAAAAAAAAAAAAANcAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-14T20:00:37.523Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TeacherAPIController.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Documents\\web humber\\CumlativePart1-2\\CumlativePart2-3\\CumlativePart1\\Controllers\\TeacherAPIController.cs",
-              "RelativeDocumentMoniker": "CumlativePart1\\Controllers\\TeacherAPIController.cs",
-              "ToolTip": "C:\\Users\\Owner\\Documents\\web humber\\CumlativePart1-2\\CumlativePart2-3\\CumlativePart1\\Controllers\\TeacherAPIController.cs",
-              "RelativeToolTip": "CumlativePart1\\Controllers\\TeacherAPIController.cs",
-              "ViewState": "AgIAABIBAAAAAAAAAAAAAAoBAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T06:49:17.708Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CourseAPIController.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Documents\\web humber\\CumlativePart1-2\\CumlativePart2-3\\CumlativePart1\\Controllers\\CourseAPIController.cs",
-              "RelativeDocumentMoniker": "CumlativePart1\\Controllers\\CourseAPIController.cs",
-              "ToolTip": "C:\\Users\\Owner\\Documents\\web humber\\CumlativePart1-2\\CumlativePart2-3\\CumlativePart1\\Controllers\\CourseAPIController.cs",
-              "RelativeToolTip": "CumlativePart1\\Controllers\\CourseAPIController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJAAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T07:25:22.784Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "TeacherPageController1.cs",
               "DocumentMoniker": "C:\\Users\\Owner\\Documents\\web humber\\CumlativePart1-2\\CumlativePart2-3\\CumlativePart1\\Controllers\\TeacherPageController1.cs",
               "RelativeDocumentMoniker": "CumlativePart1\\Controllers\\TeacherPageController1.cs",
@@ -93,7 +101,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "TeacherAPIController.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Documents\\web humber\\CumlativePart1-2\\CumlativePart2-3\\CumlativePart1\\Controllers\\TeacherAPIController.cs",
+              "RelativeDocumentMoniker": "CumlativePart1\\Controllers\\TeacherAPIController.cs",
+              "ToolTip": "C:\\Users\\Owner\\Documents\\web humber\\CumlativePart1-2\\CumlativePart2-3\\CumlativePart1\\Controllers\\TeacherAPIController.cs*",
+              "RelativeToolTip": "CumlativePart1\\Controllers\\TeacherAPIController.cs*",
+              "ViewState": "AgIAAAUBAAAAAAAAAAAAAAoBAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T06:49:17.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CourseAPIController.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Documents\\web humber\\CumlativePart1-2\\CumlativePart2-3\\CumlativePart1\\Controllers\\CourseAPIController.cs",
+              "RelativeDocumentMoniker": "CumlativePart1\\Controllers\\CourseAPIController.cs",
+              "ToolTip": "C:\\Users\\Owner\\Documents\\web humber\\CumlativePart1-2\\CumlativePart2-3\\CumlativePart1\\Controllers\\CourseAPIController.cs",
+              "RelativeToolTip": "CumlativePart1\\Controllers\\CourseAPIController.cs",
+              "ViewState": "AgIAAKYAAAAAAAAAAAAAAJAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T07:25:22.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "TeacherCoursesViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Owner\\Documents\\web humber\\CumlativePart1-2\\CumlativePart2-3\\CumlativePart1\\Models\\TeacherCoursesViewModel.cs",
               "RelativeDocumentMoniker": "CumlativePart1\\Models\\TeacherCoursesViewModel.cs",
@@ -101,12 +135,11 @@
               "RelativeToolTip": "CumlativePart1\\Models\\TeacherCoursesViewModel.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAAAAIAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T07:24:26.236Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-14T07:24:26.236Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Teacher.cs",
               "DocumentMoniker": "C:\\Users\\Owner\\Documents\\web humber\\CumlativePart1-2\\CumlativePart2-3\\CumlativePart1\\Models\\Teacher.cs",
               "RelativeDocumentMoniker": "CumlativePart1\\Models\\Teacher.cs",
@@ -118,7 +151,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "TeacherAPIController.cs",
               "DocumentMoniker": "C:\\Users\\Owner\\AppData\\Local\\SourceServer\\3caeced6ba4fe88badb9925eaffa1603266052513f403bc25e5d91e92c9121f9\\CumlativePart1\\Controllers\\TeacherAPIController.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\SourceServer\\3caeced6ba4fe88badb9925eaffa1603266052513f403bc25e5d91e92c9121f9\\CumlativePart1\\Controllers\\TeacherAPIController.cs",
