@@ -213,20 +213,9 @@ namespace CumlativePart1.Controllers
         /// <example>
         /// PUT: api/Student/UpdateStudent/4
         /// Headers: Content-Type: application/json
-        /// Request Body:
-        /// {
-        ///     "StudentFName": "",
-        ///     "StudentLName": "",
-        ///     "EnrollDate": "",
-        ///     "StudentNumber": ""
-        /// } -> 
-        /// {
-        ///     "StudentId": 4,
-        ///     "StudentFName": "Sumit",
-        ///     "StudentLName": "Singh",
-        ///     "EnrollDate": "2024-01-01",
-        ///     "StudentNumber": "S12345"
-        /// }
+        
+      
+     
         /// </example>
         /// <returns>
         /// The updated Student object

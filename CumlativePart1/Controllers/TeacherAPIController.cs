@@ -194,16 +194,7 @@ namespace CumlativePart1.Controllers
         /// <param name="TeacherData">The teacher object containing the details of the teacher to be added.</param>
         /// <example>
         /// POST: api/Teacher/AddTeacher
-        /// Headers: Content-Type: application/json
-        /// Request Body:
-        /// {
-        ///   "teacherId": 20,
-        ///   "teacherFName": "Rohit",
-        ///   "teacherLName": "Kumar",
-        ///   "teacherHireDate": "2024-11-29T04:13:56.436Z",
-        ///   "teacherSalary": 80,
-        ///   "teacherEmpNu": "N0178"
-        /// } -> 20
+        ///
         /// </example>
         /// <returns>
         /// The ID of the newly added teacher.
@@ -273,22 +264,7 @@ namespace CumlativePart1.Controllers
         /// <example>
         /// PUT: api/Teacher/UpdateTeacher/4
         /// Headers: Content-Type: application/json
-        /// Request Body:
-        /// {
-        ///     "TeacherFName": "Christine",
-        ///     "TeacherLName": "Brittle",
-        ///     "TeacherHireDate": "2020-08-15",
-        ///     "TeacherEmpNu": "T98765",
-        ///     "TeacherSalary": 55000
-        /// } -> 
-        /// {
-        ///     "TeacherId": 4,
-        ///     "TeacherFName": "Christine",
-        ///     "TeacherLName": "Brittle",
-        ///     "TeacherHireDate": "2020-08-15",
-        ///     "TeacherEmpNu": "T98765",
-        ///     "TeacherSalary": 55000
-        /// }
+  
         /// </example>
         /// <returns>
         /// The updated teacher object with the new details.

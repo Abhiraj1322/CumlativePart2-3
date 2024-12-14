@@ -142,11 +142,7 @@ namespace CumlativePart1.Controllers
         /// <example>
         /// POST: api/AuthorData/AddAuthor
         /// Headers: Content-Type: application/json
-        /// Request Body:
-        /// {
-        
-        /// } -> 409
-        /// </example>
+        /// 
         /// <returns>
         /// The inserted Author Id from the database if successful. 0 if Unsuccessful
         /// </returns>
