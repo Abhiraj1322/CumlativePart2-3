@@ -1,0 +1,97 @@
+﻿@model IEnumerable<CumlativePart1.Models.Student>
+
+<div class="student-directory">
+    <h1>Students List</h1>
+
+    <div class="Table-list">
+    <a style="margin-bottom:10px;" href="/StudentPage/New">Add Student</a>
+
+    <form method="GET" action="/CoursePage/List">
+        <div>
+            <input type="text" name="SearchKey" />
+            <input type="submit" value="Search" />
+        </div>
+    </form>
+
+    @foreach (CumlativePart1.Models.Student Student in Model)
+    {
+        <a href="/StudentPage/Show/@Student.StudentId">@Student.StudentFName @Student.StudentLName</a>
+    }
+</div>
+    <style>
+        /* Basic styling for the student directory */
+        .student-directory {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        /* Title styling */
+        .student-directory h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Styling the links in the directory */
+        .Table-list a {
+            display: block;
+            padding: 10px;
+            margin: 8px 0;
+            background-color: #e0e0e0;
+            text-decoration: none;
+            color: #333;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .Table-list a:hover {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        /* Styling the 'Add Student' link */
+        .Table-list a:first-child {
+            background-color: #28a745;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .Table-list a:first-child:hover {
+            background-color: #218838;
+        }
+
+        /* Form and search input styling */
+        form {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        form input[type="text"] {
+            padding: 8px;
+            font-size: 14px;
+            width: 70%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        form input[type="submit"] {
+            padding: 8px 16px;
+            font-size: 14px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>

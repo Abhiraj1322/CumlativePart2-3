@@ -1,0 +1,201 @@
+﻿@model CumlativePart1.Models.Course
+
+<div id="containershow">
+    <nav>
+        <!-- Navigation link to go back to the course details page -->
+        <a class="navlink" href="/CoursePage/Show/@Model.courseId">Back</a>
+    </nav>
+    <h2>Update Course</h2>
+    <form method="POST" action="/CoursePage/Update/@Model.courseId" id="courseForm">
+        <!-- Input for Course Code -->
+        <div class="inputrow">
+            <label for="CourseCode">Course Code:</label>
+            <input type="text" id="CourseCode" name="CourseCode" value="@Model.coursecode" />
+            <span id="courseCodeError" class="error-message" style="display:none;">Course Code cannot be empty.</span>
+        </div>
+
+        <!-- Input for Teacher ID -->
+        <div class="inputrow">
+            <label for="TeacherId">Teacher ID:</label>
+            <input type="text" id="TeacherId" name="TeacherId" value="@Model.teacherid" />
+            <span id="teacherIdError" class="error-message" style="display:none;">Teacher ID cannot be empty.</span>
+        </div>
+
+        <!-- Input for Start Date -->
+        <div class="inputrow">
+            <label for="StartDate">Start Date:</label>
+            <input type="date" id="StartDate" name="StartDate" value="@Model.startdate.ToString("yyyy-MM-dd")" />
+            <span id="startDateError" class="error-message" style="display:none;">Start Date cannot be in the future.</span>
+        </div>
+
+        <!-- Input for Finish Date -->
+        <div class="inputrow">
+            <label for="FinishDate">Finish Date:</label>
+            <input type="date" id="FinishDate" name="FinishDate" value="@Model.finishdate.ToString("yyyy-MM-dd")" />
+            <span id="finishDateError" class="error-message" style="display:none;">Finish Date cannot be before Start Date.</span>
+        </div>
+
+        <!-- Input for Course Name -->
+        <div class="inputrow">
+            <label for="CourseName">Course Name:</label>
+            <input type="text" id="CourseName" name="CourseName" value="@Model.coursename" />
+            <span id="courseNameError" class="error-message" style="display:none;">Course Name cannot be empty.</span>
+        </div>
+
+        <!-- Submit button -->
+        <div class="inputrow">
+            <input type="submit" value="Update Course" class="submit-btn" />
+        </div>
+    </form>
+</div>
+
+<style>
+    /* General Styling */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f9f9f9;
+        color: #333;
+    }
+
+    #containershow {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    nav {
+        margin-bottom: 20px;
+    }
+
+    .navlink {
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+    }
+
+        .navlink:hover {
+            text-decoration: underline;
+        }
+
+    h2 {
+        text-align: center;
+        color: #444;
+    }
+
+    /* Form Styling */
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inputrow {
+        margin-bottom: 15px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="date"] {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+        input[type="text"]:focus,
+        input[type="date"]:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+        }
+
+    .submit-btn {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+
+    /* Error Message Styling */
+    .error-message {
+        color: red;
+        font-size: 12px;
+        margin-top: 5px;
+        display: none; /* Hidden by default */
+    }
+
+        .error-message:visible {
+            display: inline;
+        }
+</style>
+
+<script>
+    // Add an event listener for form submission
+    document.getElementById('courseForm').addEventListener('submit', function (event) {
+        // Fetch input values and today's date for validation
+        const courseCode = document.getElementById('CourseCode').value.trim();
+        const teacherId = document.getElementById('TeacherId').value.trim();
+        const startDate = document.getElementById('StartDate').value;
+        const finishDate = document.getElementById('FinishDate').value;
+        const courseName = document.getElementById('CourseName').value.trim();
+        const today = new Date().toISOString().split('T')[0]; // Format: YYYY-MM-DD
+
+        // Reset all error messages before starting validation
+        const errorMessages = document.querySelectorAll('.error-message');
+        errorMessages.forEach(msg => (msg.style.display = 'none'));
+
+        let valid = true; // Track overall form validity
+
+        // Validate Course Code: Cannot be empty
+        if (!courseCode) {
+            document.getElementById('courseCodeError').style.display = 'inline';
+            valid = false;
+        }
+
+        // Validate Teacher ID: Cannot be empty
+        if (!teacherId) {
+            document.getElementById('teacherIdError').style.display = 'inline';
+            valid = false;
+        }
+
+        // Validate Start Date: Cannot be in the future
+        if (startDate > today) {
+            document.getElementById('startDateError').style.display = 'inline';
+            valid = false;
+        }
+
+        // Validate Finish Date: Cannot be earlier than Start Date
+        if (finishDate < startDate) {
+            document.getElementById('finishDateError').style.display = 'inline';
+            valid = false;
+        }
+
+        // Validate Course Name: Cannot be empty
+        if (!courseName) {
+            document.getElementById('courseNameError').style.display = 'inline';
+            valid = false;
+        }
+
+        // If any validation fails, prevent form submission
+        if (!valid) {
+            event.preventDefault(); // Stop form submission
+        }
+    });
+</script>

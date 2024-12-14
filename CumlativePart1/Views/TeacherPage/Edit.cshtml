@@ -1,0 +1,168 @@
+﻿@model CumlativePart1.Models.Teacher
+
+<div id="update-container">
+    <nav class="back-nav">
+        <a href="/TeacherPage/Show/@Model.TeacherId" class="back-link">Back to Teacher Details</a>
+    </nav>
+
+    <h1>Update Teacher Information</h1>
+
+    <form method="POST" action="/TeacherPage/Update/@Model.TeacherId" id="updateTeacherForm">
+        <div class="form-group">
+            <label for="TeacherFname">First Name:</label>
+            <input type="text" id="TeacherFname" name="TeacherFname" value="@Model.TeacherFName" class="input-field" />
+            <div id="fnameError" class="error-msg">First Name cannot be empty.</div>
+        </div>
+
+        <div class="form-group">
+            <label for="TeacherLname">Last Name:</label>
+            <input type="text" id="TeacherLname" name="TeacherLname" value="@Model.TeacherLName" class="input-field" />
+            <div id="lnameError" class="error-msg">Last Name cannot be empty.</div>
+        </div>
+
+        <div class="form-group">
+            <label for="TeacherEmpNu">Employee Number:</label>
+            <input type="text" id="TeacherEmpNu" name="TeacherEmpNu" value="@Model.TeacherEmpNu" class="input-field" />
+        </div>
+
+        <div class="form-group">
+            <label for="TeacherHireDate">Hire Date:</label>
+            <input type="date" id="TeacherHireDate" name="TeacherHireDate" value="@Model.TeacherHireDate.ToString("yyyy-MM-dd")" class="input-field" />
+            <div id="hireDateError" class="error-msg">Hire Date cannot be in the future.</div>
+        </div>
+
+        <div class="form-group">
+            <label for="TeacherSalary">Salary:</label>
+            <input type="number" id="TeacherSalary" name="TeacherSalary" value="@Model.TeacherSalary" class="input-field" />
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="submit-button">Update Teacher</button>
+        </div>
+    </form>
+</div>
+
+<!-- Styling -->
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #fafafa;
+        margin: 0;
+        padding: 0;
+    }
+
+    #update-container {
+        width: 60%;
+        margin: 40px auto;
+        padding: 25px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        text-align: center;
+        color: #333;
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .back-nav {
+        text-align: right;
+        margin-bottom: 20px;
+    }
+
+    .back-link {
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .back-link:hover {
+        color: #0056b3;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        color: #555;
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .input-field {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-sizing: border-box;
+        transition: border 0.3s ease;
+    }
+
+    .input-field:focus {
+        border-color: #007bff;
+        outline: none;
+    }
+
+    .error-msg {
+        display: none;
+        color: #e74c3c;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .submit-button {
+        width: 100%;
+        padding: 15px;
+        background-color: #28a745;
+        color: #ffffff;
+        border: none;
+        border-radius: 8px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .submit-button:hover {
+        background-color: #218838;
+    }
+</style>
+
+<!-- Script for form validation -->
+<script>
+    document.getElementById('updateTeacherForm').addEventListener('submit', function (event) {
+        const teacherFname = document.getElementById('TeacherFname').value.trim();
+        const teacherLname = document.getElementById('TeacherLname').value.trim();
+        const teacherHireDate = document.getElementById('TeacherHireDate').value;
+        const today = new Date().toISOString().split('T')[0];
+
+        let valid = true;
+
+        document.getElementById('fnameError').style.display = 'none';
+        document.getElementById('lnameError').style.display = 'none';
+        document.getElementById('hireDateError').style.display = 'none';
+
+        if (!teacherFname) {
+            document.getElementById('fnameError').style.display = 'block';
+            valid = false;
+        }
+
+        if (!teacherLname) {
+            document.getElementById('lnameError').style.display = 'block';
+            valid = false;
+        }
+
+        if (teacherHireDate > today) {
+            document.getElementById('hireDateError').style.display = 'block';
+            valid = false;
+        }
+
+        if (!valid) {
+            event.preventDefault();
+        }
+    });
+</script>

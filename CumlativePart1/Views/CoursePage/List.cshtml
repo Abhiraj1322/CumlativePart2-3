@@ -1,0 +1,21 @@
+﻿@model IEnumerable<CumlativePart1.Models.Course>
+
+<div class="Table-list">
+    <a style="margin-bottom:10px;" href="/CoursePage/New">Add Course</a>
+    <form method="GET" action="/CoursePage/List">
+        <div>
+            <input type="text" name="SearchKey" />
+            <input type="submit" value="Search" />
+        </div>
+    </form>
+
+
+
+    @foreach (CumlativePart1.Models.Course Course in Model)
+    {
+        <a href="/CoursePage/Show/@Course.courseId">@Course.coursecode </a>
+      
+    }
+  
+   
+</div>

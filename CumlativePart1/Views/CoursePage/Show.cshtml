@@ -1,0 +1,183 @@
+﻿@model CumlativePart1.Models.Course
+
+<style>
+    body {
+        font-family: Verdana, sans-serif;
+        background-color: #eef5e9;
+        margin: 0;
+        padding: 0;
+    }
+
+    .main-container {
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 100vh;
+    }
+
+    .sidebar {
+        width: 250px;
+        background-color: #2e7d32;
+        color: #ffffff;
+        padding: 20px;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        flex-shrink: 0;
+    }
+
+        .sidebar h2 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+            .sidebar ul li {
+                margin: 10px 0;
+            }
+
+                .sidebar ul li a {
+                    color: #ffffff;
+                    text-decoration: none;
+                    font-size: 15px;
+                }
+
+                    .sidebar ul li a:hover {
+                        text-decoration: underline;
+                    }
+
+    .content {
+        flex-grow: 1;
+        background-color: #ffffff;
+        padding: 25px;
+        margin-left: auto;
+        border-radius: 10px 0 0 10px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    h1 {
+        text-align: center;
+        color: #2e7d32;
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+    }
+
+    th, td {
+        padding: 15px;
+        border: 1px solid #c8e6c9;
+        text-align: center;
+        font-size: 15px;
+        word-wrap: break-word;
+    }
+
+    th {
+        background-color: #4caf50;
+        color: #ffffff;
+        text-transform: capitalize;
+    }
+
+    tbody tr:nth-child(odd) {
+        background-color: #f1f8e9;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+
+    tbody tr:hover {
+        background-color: #dcedc8;
+    }
+
+    .footer {
+        text-align: right;
+        margin-top: 15px;
+        font-size: 13px;
+        color: #5d6d5f;
+    }
+
+
+    .button-container {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .btn {
+        padding: 12px 25px;
+        font-size: 16px;
+        background-color: #007bff;
+        color: #ffffff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-decoration: none;
+    }
+
+        .btn:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+
+        .btn:active {
+            background-color: #004085;
+            transform: translateY(0);
+        }
+
+        .btn:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.5);
+        }
+
+
+</style>
+
+<div class="main-container">
+    <div class="sidebar">
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="#overview">Course Overview</a></li>
+            <li><a href="#instructors">Instructor List</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Course Overview</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Course Name</th>
+                    <th>Code</th>
+                    <th>Instructor ID</th>
+                    <th>Start Date</th>
+                </tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                    <td>Example Course</td>
+                    <td>HTTP5122</td>
+                    <td>12345</td>
+                    <td>2024-01-15</td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="/CoursePage/List">Back to List</a> <a class="alert-warning" href="/CoursePage/DeleteConfirm/@Model.courseId">Delete</a>
+        <div class="button-container">
+            <div class="button-container">
+                <form method="get" action="/CoursePage/Edit/@Model.courseId">
+                    <button type="submit" class="btn">Update Course</button>
+                </form>
+    </div>
+        <div class="footer">Updated on: 2024-11-27
+            
+    </div>
+</div>

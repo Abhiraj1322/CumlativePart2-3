@@ -1,0 +1,13 @@
+﻿@model CumlativePart1.Models.Course
+<div id="containershow">
+    <nav>
+        <a class="navlink" href="/CoursePage/Show/@Model.courseId">Cancel</a>
+    </nav>
+    <h2>Are you sure you want to delete @Model.coursecode @Model.coursename?</h2>
+    <p>This action cannot be undone.</p>
+    <form method="POST" action="/CoursePage/Delete/@Model.courseId">
+        <button class="btn-warning">
+            Confirm Delete
+        </button>
+    </form>
+</div>
