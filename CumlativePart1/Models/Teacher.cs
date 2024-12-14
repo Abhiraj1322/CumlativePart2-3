@@ -4,6 +4,7 @@ namespace CumlativePart1.Models
 {
     public class Teacher
     {
+
         public int TeacherId { get; set; }
 
         public string? TeacherFName { get; set; }
@@ -16,6 +17,7 @@ namespace CumlativePart1.Models
 
         public string? TeacherEmpNu { get; set; }
 
-        public List<string> CourseNames { get; set; } = new List<string>();
+
+
     }
 }

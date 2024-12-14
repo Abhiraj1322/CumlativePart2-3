@@ -90,7 +90,7 @@ namespace CumlativePart1.Controllers
         /// based on the provided course ID. If the course is found, the details will be returned.
         /// </remarks>
         /// <example>
-        /// GET api/Course/FindCourse/1 -> {"courseId":1,"coursecode":"http5101","teacherid":1,"startdate":"2018-09-04T00:00:00","finishdate":"2018-12-14T00:00:00","coursename":"Web Application Development"}
+   
         /// </example>
         [HttpGet]
         [Route(template: "FindCourse/{id}")]

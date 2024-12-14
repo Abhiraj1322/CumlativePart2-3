@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Owner\\Documents\\web humber\\CumlativePart1-2\\CumlativePart1\\CumlativePart1.csproj": {}
+    "C:\\Users\\Owner\\Documents\\web humber\\CumlativePart1-2\\CumlativePart2-3\\CumlativePart1\\CumlativePart1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Owner\\Documents\\web humber\\CumlativePart1-2\\CumlativePart1\\CumlativePart1.csproj": {
+    "C:\\Users\\Owner\\Documents\\web humber\\CumlativePart1-2\\CumlativePart2-3\\CumlativePart1\\CumlativePart1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Owner\\Documents\\web humber\\CumlativePart1-2\\CumlativePart1\\CumlativePart1.csproj",
+        "projectUniqueName": "C:\\Users\\Owner\\Documents\\web humber\\CumlativePart1-2\\CumlativePart2-3\\CumlativePart1\\CumlativePart1.csproj",
         "projectName": "CumlativePart1",
-        "projectPath": "C:\\Users\\Owner\\Documents\\web humber\\CumlativePart1-2\\CumlativePart1\\CumlativePart1.csproj",
+        "projectPath": "C:\\Users\\Owner\\Documents\\web humber\\CumlativePart1-2\\CumlativePart2-3\\CumlativePart1\\CumlativePart1.csproj",
         "packagesPath": "C:\\Users\\Owner\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Owner\\Documents\\web humber\\CumlativePart1-2\\CumlativePart1\\obj\\",
+        "outputPath": "C:\\Users\\Owner\\Documents\\web humber\\CumlativePart1-2\\CumlativePart2-3\\CumlativePart1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Owner\\AppData\\Roaming\\NuGet\\NuGet.Config",

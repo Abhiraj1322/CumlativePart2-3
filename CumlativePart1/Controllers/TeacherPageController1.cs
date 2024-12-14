@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Mvc;
 using CumlativePart1.Controllers;
 using CumlativePart1.Models;
-using Google.Protobuf.WellKnownTypes;
 
 
 namespace CumlativePart1.Controllers
